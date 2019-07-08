@@ -12,8 +12,11 @@ a{
     transition: 0.3s;
 }
 a:hover{ color: cyan; }
+
 p, h1{ text-align: center; }
+
 #title{ font-size: 4.5rem; }
+
 #img-caption{ font-style: italic; }
 
 #img-div{
@@ -21,20 +24,54 @@ p, h1{ text-align: center; }
     flex-direction: column;
 }
 #image{
-    width: 50vw;
+    width: 30vw;
     height: auto;
     margin: auto;
 }
 
+#intro{
+    margin: auto;
+    width: 80vw;
+    line-height: 1.8rem;
+}
+
+#tribute-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 85vw;
+}
+
+#card{
+    border: 1px solid #424242;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+li{
+    list-style-type: none;
+    padding: 0.2rem;
+    border-bottom: 1px dotted #424242;
+}
+
 #signature{
     background: #424242;
-    width: 60vw;
+    width: 80vw;
     font-size: 1.4rem;
     padding: 0.3rem 0;
     margin: auto;
     border-radius: 10px;
 }
 
-@media (min-width: 768px){
-    #image{ width: 30vw; }
+@media (max-width: 320px){
+    #image{ width: 80vw; }
+}
+@media (max-width: 425px){
+    #image{ width: 70vw; }
+}
+@media (max-width: 768px){
+    #image{ width: 45vw; }
 }

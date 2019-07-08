@@ -25,6 +25,7 @@ p, h1{ text-align: center; }
 }
 #image{
     width: 30vw;
+    max-width: 100%;
     height: auto;
     margin: auto;
 }

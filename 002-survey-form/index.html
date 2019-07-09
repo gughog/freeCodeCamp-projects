@@ -8,9 +8,7 @@
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <title>Gaming Survey</title>
     </head>
-
     <body>
-    
         <header>
             <img src="https://cdn.pixabay.com/photo/2018/03/15/11/42/joystick-3227969_960_720.png" alt="A joystick">
             <h1 id="title">Gaming Quick Survey</h1>
@@ -22,20 +20,16 @@
         <form action="" id="survey-form">
             <label for="name" id="name-label">Your Name:</label>
             <input type="text" id="name" name="name" required placeholder="Enter your name...">
-
             <label for="email" id="email-label">Your email:</label>
             <input type="email" name="email" id="email" required placeholder="Enter your email...">
-
             <label for="number" id="number-label">Your Age:</label>
             <input type="number" name="number" id="number" min="16" max="99" placeholder="16 to 99">
-
             <label for="gender">What is your sex gender?</label>
             <div id="radio-field">
                 <input type="radio" name="gender" id="gender" value="male"> Male <br />
                 <input type="radio" name="gender" id="gender" value="female"> Female <br />
                 <input type="radio" name="gender" id="gender" value="dontwanna"> Don't wanna say <br />
             </div>
-
             <label for="dropdown">Select your favourite gaming platform:</label>
             <select name="dropdown" id="dropdown">
                 <option value="">Choose one</option>
@@ -45,8 +39,6 @@
                 <option value="nintendo">Nintendo series (3DS, Wii, Switch, etc...)</option>
                 <option value="mobile">Mobiles (mobiles in general)</option>
             </select>
-
-
             <label for="checkbox">What of these game series do you like more?</label>
             <div id="checkbox-area">
                 <input type="checkbox" name="Zelda" value="zelda"> Zelda <br />
@@ -57,15 +49,13 @@
                 <input type="checkbox" name="LOL" value="lol"> League of Legends <br />
                 <input type="checkbox" name="Fallout" value="fallout"> Fallout <br />
             </div>
-
             <label for="textarea">For you, what the perfect game needs to be?</label>
             <textarea name="textarea" id="textarea" placeholder="Write an awesome message to us!"></textarea>
-
             <input type="submit" id="submit" value="Submit!"/>
         </form>
-
-
-        
+        <footer>
+            <a href="http://github.com/gughog" target="_blank" rel="noopener noreferrer">@gughog, 2019</a>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>

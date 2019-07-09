@@ -4,4 +4,4 @@ This repository contains all my projects from freeCodeCamp's Web Development cou
 
 ## Projects:
 
-* #01 - Tribute Page (Alice In Chains);
+* #01 - [Tribute Page (Alice In Chains)](https://github.com/gughog/freeCodeCamp-projects/tree/master/001-tribute-page)

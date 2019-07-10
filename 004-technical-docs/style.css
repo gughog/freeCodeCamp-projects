@@ -47,6 +47,7 @@ h1{
     color: aliceblue;
     margin: 1.4rem 0.4rem 0 0.4rem;
     padding-left: 10px;
+    transition: 0.5s;
 }
 .nav-link:hover{
     border-left: 0.2rem solid #61dafb;
@@ -62,19 +63,22 @@ h1{
 
 
 #main-doc{
-    height: 2000px;
-    margin-left: 26vw;
+    margin-left: 28vw;
+    margin-right: 4vw;
     overflow-x: hidden;
 }
 #main-doc > h2{ font-size: 2rem; }
-#main-doc > p{ font-size: 1.2rem; line-height: 1.8rem;}
+#main-doc > p{ font-size: 1.4rem; line-height: 2rem;}
 #main-doc > ul > li{ margin-top: 0.8rem; }
-#main-doc > p > code, pre, textarea{
-    font-size: 1.2rem;
+#main-doc > p > img{
+    width: 100%;
+    height: auto;
+}
+#main-doc > p > code{
+    font-size: 1.4rem;
     background-color: #424242;
     color: #61dafb;
     padding: 0.4rem;
     border-radius: 0.5rem;
     font-weight: bolder;
 }
-textarea{ width: 50vw; height: 50vh; }

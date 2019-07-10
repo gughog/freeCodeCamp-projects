@@ -8,13 +8,19 @@ const contents = [
 
             To do this, we'll need some tools installed in our machine: <br/><br/>
         
-            > Node and NPM (Node Package Manager, comes with node); <br/>
-            > Or Yarn, as NPM alternative; <br/><br/>
-            
+            <ul>
+                <li> Node.js </li>
+                <li> NPM (Node Package Manager, comes with Node.js);</li>
+                <li> Or Yarn, as NPM alternative; </li>
+                <li> A modern editor, like VS Code, Sublime Text or Atom;</li>
+                <li> A good knowledge in Javascript ES6+;</li>
+            </ul>
 
+            <p>
             Let's start creating a project with <code>npx create-react-app myproject</code>, or <code>yarn create myproject</code> <br/><br/>
 
             Now navigate to the page with <code> cd /myproject</code> and then start the development server with <code>npm start</code> or <code>yarn start</code>. Then you can open your localhost server and see the boilerplate react app.
+            </p>
         `,
     },
     {
@@ -54,7 +60,7 @@ const contents = [
     },
     {
         id: '005',
-        title: '#005 - Importing components to container components',
+        title: '#005 - Importing components',
         body: `
             After you create your new fancy components, if you need to use two or more of these inside a view/container, you'll need to import these to your view component. And when you're done, It's easy to call them to your app: <br/><br/>
 
@@ -135,19 +141,41 @@ const contents = [
     {
         id: '011',
         title: '#011 - About this docs',
-        body: `This React docs is part of the freeCodeCamp Web Developer course, and contains a limited amount of data about React. Please, visit the <a href="https://facebook.github.io/create-react-app/">official documentation</a> for a more deep and consistent content for your studies, or use this only for a quick guide.`
+        body: `This React docs is part of the freeCodeCamp Web Developer course, and contains a limited amount of data about React. Please, visit the <a href="https://facebook.github.io/create-react-app/">official documentation</a> for a more deep and consistent content for your studies, or use this only for a quick guide.<br/><br/>
+
+        <a href="https://github.com/gughog">@gughog, 2019</a>
+        
+        `
     }
 ]
 
 // --------------------------------------
 const main = document.getElementById('main-doc')
+const navlinks = document.getElementById('nav-links')
+
+navlinks.innerHTML = contents.map((item)=>{
+    return `<a href="#${item.title.split(' ').join('_')}" class="nav-link">${item.title}</a>`
+}).join('')
 
 main.innerHTML = contents.map((item)=>{
     return `
-    <h2 id="${item.id}">${item.title}</h2>
-    <p>
-        ${item.body}
-    </p>
-    <div class="divisor"></div>
-`
+    <section id="${item.title.split(' ').join('_')}" class="main-section">
+
+        <header>
+            <h1 id="${item.id}">${item.title}</h1>
+        </header>
+        
+        <p>
+            ${item.body}
+        </p>
+        <div class="divisor"></div>
+    </section>
+` 
 }).join('')
+
+let screenSize = window.screen.availWidth
+console.log(screenSize)
+
+if(screenSize < 768){
+    
+}

@@ -14,7 +14,7 @@ a{ text-decoration: none; }
     margin: 0.5rem auto;
 }
 
-/*--------------------------*/
+/*--------------------------------------------------------------------*/
 #header{
     display: flex;
     flex-direction: column;
@@ -25,6 +25,7 @@ a{ text-decoration: none; }
 h1{
     margin: 0.6rem 0;
     font-size: 2rem;
+    text-align: center;
 }
 
 #navbar{
@@ -36,49 +37,65 @@ h1{
     z-index: 1;
     overflow-x: hidden;
 
-    display: flex;
-    flex-direction: column;
-
     background: #424242;
     color: aliceblue;
+}
+#nav-links{
+    display: flex;
+    flex-direction: column;
 }
 
 .nav-link{
     color: aliceblue;
-    margin: 1.4rem 0.4rem 0 0.4rem;
+    margin: 1.2rem 0.4rem 0 0.4rem;
     padding-left: 10px;
     transition: 0.5s;
 }
 .nav-link:hover{
     border-left: 0.2rem solid #61dafb;
+    color: #61dafb;
 }
-
-
-
-
-
-
-
-
-
-
+/*-------------------------------------------------------------------*/
 #main-doc{
     margin-left: 28vw;
     margin-right: 4vw;
     overflow-x: hidden;
 }
-#main-doc > h2{ font-size: 2rem; }
-#main-doc > p{ font-size: 1.4rem; line-height: 2rem;}
-#main-doc > ul > li{ margin-top: 0.8rem; }
-#main-doc > p > img{
+#main-doc > section > p > a{
+    color: #618afb;
+    font-weight: bolder;
+}
+#main-doc > h1{ font-size: 2rem; }
+#main-doc > section > p, li{ font-size: 1.4rem; line-height: 2rem;}
+#main-doc > section > p > img{
     width: 100%;
     height: auto;
 }
-#main-doc > p > code{
+#main-doc > section > p > code{
     font-size: 1.4rem;
     background-color: #424242;
     color: #61dafb;
     padding: 0.4rem;
     border-radius: 0.5rem;
     font-weight: bolder;
+}
+/*-------------------------------------------------------------------*/
+@media (max-width: 1024px){
+    #navbar{ width: 35vw; }
+    #main-doc{ margin-left: 37vw; margin-right: 2vw; }
+}
+@media (max-width: 768px){
+    #navbar{
+        height: 28%;
+        width: 100vw;
+        position: fixed;
+        top: 0;
+
+        z-index: 1;
+        /* left: 0; */
+    }
+    #main-doc{
+        margin: 32vh 2vw 2vh 2vw;
+    }
+    p{ text-align: justify; }
 }

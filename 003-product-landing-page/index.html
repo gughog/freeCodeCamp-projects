@@ -6,56 +6,63 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <link rel="stylesheet" href="style.css">
-        <title>Techobuck - Rent tech gadgets!</title>
+        <title>Technobucket - Rent tech gadgets!</title>
     </head>
     <body>
         <header id="header">
             <nav id="nav-bar">
                 <img id="header-img" src="./assets/mainlogo.png" alt="Gughog's Rockstore logo">
                 <ul id="nav-links">
-                    <li> <a id="nav-link" href="">About</a> </li>
-                    <li> <a id="nav-link" href="">Products</a> </li>
-                    <li> <a id="nav-link" href="">Prices</a> </li>
+                    <li> <a class="nav-link" href="#about">About</a> </li>
+                    <li> <a class="nav-link" href="#products">Products</a> </li>
+                    <li> <a class="nav-link" href="#prices">Prices</a> </li>
                 </ul>
             </nav>
         </header>
 
-        <div id="container">
+        <div class="container">
             <h1 id="title">Needs to rent? <br/> We're here!</h1>
-
             <form id="form" action="https://www.freecodecamp.com/email-submit">
                 <label for="email">Subscribe to our newsletter and get in touch of our sales!</label> <br/>
                 <input type="email" name="email" id="email" placeholder="your@email.com" required/>
                 <input id="submit" type="submit" value="Subscribe!">
             </form>
         </div>
-        
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
+        <div class="divisor"></div>
+
+        <div class="container">
+            <h2 id="about">Our products in action</h2>
+            <iframe
+                id="video"
+                width="460" 
+                height="215" 
+                src="https://www.youtube.com/embed/l22t-XrGKEY" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+            ></iframe>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="container">
+            <h2 id="products">Technobucket is power!</h2>
+            <div id="products-container"></div>
+        </div>
+
+        <div class="divisor"></div>
+
+        <div class="container">
+            <h2 id="prices">Technobucket is cheap!</h2>
+            <div id="prices-container"></div>
+        </div>
 
         <footer id="footer">
             <ul id="nav-links">
-                <li> <a id="nav-link" href="">About</a> </li>
-                <li> <a id="nav-link" href="">Our Products</a> </li>
-                <li> <a id="nav-link" href="">Prices</a> </li>
+                <li> <a class="nav-link" href="#about">About</a> </li>
+                <li> <a class="nav-link" href="#products">Our Products</a> </li>
+                <li> <a class="nav-link" href="#prices">Prices</a> </li>
+                <li> <a class="nav-link" href="http://github.com/gughog" target="_blank" rel="noopener noreferrer">@gughog, 2019</a> </li>
             </ul>
         </footer>
         

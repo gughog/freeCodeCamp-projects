@@ -172,10 +172,3 @@ main.innerHTML = contents.map((item)=>{
     </section>
 ` 
 }).join('')
-
-let screenSize = window.screen.availWidth
-console.log(screenSize)
-
-if(screenSize < 768){
-    
-}

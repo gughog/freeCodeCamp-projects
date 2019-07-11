@@ -12,11 +12,16 @@ h2{ margin-top: 5rem; }
     width: 15vw;
     transition: 0.5s;
 }
+.divisor2-2{
+    border-top: 2px solid #1a237e;
+    margin: 2rem auto;
+    width: 5vw;
+    transition: 0.5s;
+}
 .full-height{ height: 100vh;}
 
 /*----------------------------------------------------*/
 #personal-picture{ width: 10rem; margin: 0 auto; }
-
 #welcome-section{
     height: 100vh;
     display: flex;
@@ -40,3 +45,8 @@ h2{ margin-top: 5rem; }
     background: linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#ffffff",GradientType=1);
 }
+#education{
+    display: flex;
+    flex-direction: column;
+}
+#education h4, h5, p{ margin: 0.3rem; }

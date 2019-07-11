@@ -1,0 +1,42 @@
+h1, h2{ font-size: 4rem; margin: 0;  }
+h2{ margin-top: 5rem; }
+.divisor{
+    border-top: 2px solid white;
+    margin: 2rem auto;
+    width: 15vw;
+    transition: 0.5s;
+}
+.divisor2{
+    border-top: 2px solid #1a237e;
+    margin: 2rem auto;
+    width: 15vw;
+    transition: 0.5s;
+}
+.full-height{ height: 100vh;}
+
+/*----------------------------------------------------*/
+#personal-picture{ width: 10rem; margin: 0 auto; }
+
+#welcome-section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(15,20,73);
+    background: -moz-linear-gradient(45deg, rgba(15,20,73,1) 0%, rgba(26,35,126,1) 75%);
+    background: -webkit-linear-gradient(45deg, rgba(15,20,73,1) 0%, rgba(26,35,126,1) 75%);
+    background: linear-gradient(45deg, rgba(15,20,73,1) 0%, rgba(26,35,126,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1449",endColorstr="#1a237e",GradientType=1);
+}
+/*-----------------------------------------------------*/
+#education-section{
+    display: flex;
+    flex-direction: column;
+    
+
+    background: rgb(204,204,204);
+    background: -moz-linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
+    background: -webkit-linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
+    background: linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cccccc",endColorstr="#ffffff",GradientType=1);
+}

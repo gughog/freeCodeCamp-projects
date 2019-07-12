@@ -29,13 +29,23 @@ const data = {
             conclusion: 'July, 2019'
         }
     ],
-    projects: [
-
+    skills: [
+        { id: 'html5', class: 'fab fa-html5'},
+        { id: 'css3', class: 'fab fa-css3'},
+        { id: 'js', class: 'fab fa-js'},
+        { id: 'react', class: 'fab fa-react'},
+        { id: 'linux', class: 'fab fa-ubuntu'},
+        { id: 'bootstrap', class: 'fab fa-bootstrap'},
+        { id: 'materialize', class: 'fab fa-google'},
+        { id: 'git', class: 'fab fa-git'},
+        { id: 'npm', class: 'fab fa-npm'},
+        { id: 'yarn', class: 'fab fa-yarn'},
     ]
 }
 
 
 const education = document.getElementById('education')
+const skills = document.getElementById('skills')
 
 education.innerHTML = data.education.map(item =>{
     return `
@@ -44,5 +54,11 @@ education.innerHTML = data.education.map(item =>{
         <h5>${item.course}</h5>
         <h5>${item.conclusion}</h5>
         <div class="divisor2-2"></div>
+    `
+}).join('')
+
+skills.innerHTML = data.skills.map(item =>{
+    return `
+        <i class="${item.class} skill-icon"></i>
     `
 }).join('')

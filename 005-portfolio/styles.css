@@ -1,5 +1,8 @@
+/*Generics*/
 h1, h2{ font-size: 4rem; margin: 0;  }
 h2{ margin-top: 5rem; }
+#education, #skills h4, h5, p{ margin: 0.3rem; }
+
 .divisor{
     border-top: 2px solid white;
     margin: 2rem auto;
@@ -19,7 +22,10 @@ h2{ margin-top: 5rem; }
     transition: 0.5s;
 }
 .full-height{ height: 100vh;}
-
+.skill-icon{
+    font-size: 4rem;
+    margin: 1rem;
+}
 /*----------------------------------------------------*/
 #personal-picture{ width: 10rem; margin: 0 auto; }
 #welcome-section{
@@ -37,7 +43,7 @@ h2{ margin-top: 5rem; }
 #education-section{
     display: flex;
     flex-direction: column;
-    
+    justify-content: center;
 
     background: rgb(204,204,204);
     background: -moz-linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
@@ -49,4 +55,20 @@ h2{ margin-top: 5rem; }
     display: flex;
     flex-direction: column;
 }
-#education h4, h5, p{ margin: 0.3rem; }
+/*-----------------------------------------------------*/
+#skills-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgb(66,66,66);
+    background: -moz-linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(33,33,33,1) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(33,33,33,1) 100%);
+    background: linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(33,33,33,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#424242",endColorstr="#212121",GradientType=1);
+}
+#skills{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}

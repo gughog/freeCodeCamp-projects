@@ -34,16 +34,16 @@ const data = {
         }
     ],
     skills: [
-        { id: 'HTML5', class: 'fab fa-html5'},
-        { id: 'CSS3', class: 'fab fa-css3'},
-        { id: 'Javascript', class: 'fab fa-js'},
-        { id: 'React.js', class: 'fab fa-react'},
-        { id: 'Linux/Ubuntu', class: 'fab fa-ubuntu'},
-        { id: 'Bootstrap CSS', class: 'fab fa-bootstrap'},
-        { id: 'Materialize CSS', class: 'fab fa-google'},
-        { id: 'Git/Github', class: 'fab fa-git'},
-        { id: 'NPM', class: 'fab fa-npm'},
-        { id: 'Yarn', class: 'fab fa-yarn'},
+        { id: 'HTML5', class: 'fab fa-html5', color: 'red-text'},
+        { id: 'CSS3', class: 'fab fa-css3', color: 'blue-text'},
+        { id: 'Javascript', class: 'fab fa-js', color: 'yellow-text'},
+        { id: 'React.js', class: 'fab fa-react', color: 'cyan-text'},
+        { id: 'Linux/Ubuntu', class: 'fab fa-ubuntu', color: 'orange-text'},
+        { id: 'Bootstrap CSS', class: 'fab fa-bootstrap', color: 'purple-text'},
+        { id: 'Materialize CSS', class: 'fab fa-google', color: ''},
+        { id: 'Git/Github', class: 'fab fa-git', color: 'red-text'},
+        { id: 'NPM', class: 'fab fa-npm', color: 'red-text'},
+        { id: 'Yarn', class: 'fab fa-yarn', color: 'blue-text'},
     ],
     projects: [
         {
@@ -85,7 +85,7 @@ const data = {
             id: 006,
             link: 'https://github.com/gughog/freeCodeCamp-projects/tree/master/003-product-landing-page',
             name: 'Technobucket Landing Page',
-            description: 'A landing page for the fictional service "Technobucket".',
+            description: 'A landing page for the fictional service called "Technobucket".',
             image: './assets/img/project-pics/technobucket.png'
         },
         {
@@ -115,13 +115,13 @@ education.innerHTML = data.education.map(item =>{
 
 skills.innerHTML = data.skills.map(item =>{
     return `
-        <i class="${item.class} skill-icon tooltipped" data-position="bottom" data-tooltip="${item.id}"></i>
+        <i class="${item.class} ${item.color} skill-icon tooltipped" data-position="bottom" data-tooltip="${item.id}"></i>
     `
 }).join('')
 
 cards.innerHTML = data.projects.map(item=>{
     return `
-    <div id="card" class="carousel-item grey darken-2 white-text" href="#one!">
+    <div id="card" class="project-tile carousel-item grey darken-2 white-text" href="#one!">
         <h2><a href="${item.link}" class=" cyan-text text-accent-3">${item.name} <i class="fas fa-external-link-alt"></i></a></h2>
         <p class="">${item.description}</p>
         <img src="${item.image}" alt="">

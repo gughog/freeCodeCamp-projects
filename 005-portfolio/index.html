@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
         <link rel="stylesheet" href="styles.css">
-        
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
         <title>Gustavo Oliveira</title>
     </head>
     <body>
@@ -16,7 +16,7 @@
         <div class="navbar-fixed">
             <nav id="navbar">
                 <div class="nav-wrapper indigo darken-4">
-                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
+                    <a href="#" data-target="mobile" class="sidenav-trigger"><i class="fas fa-bars"></i></a>
                     <ul class="right hide-on-med-and-down">
                         <li><a href="#welcome-section">Home</a></li>
                         <li><a href="#education-section">Education</a></li>
@@ -27,13 +27,13 @@
             </nav>
         </div>
         <!--mobile sidebar-->
-        <ul class="sidenav" id="mobile-demo">
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#education-section">Education</a></li>
-            <li><a href="#skills-section">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
+        <ul class="sidenav indigo darken-4" id="mobile">
+            <li><a class="white-text"><h4>Go to:</h4></a></li>
+            <li><a class="white-text" href="#welcome-section">Home</a></li>
+            <li><a class="white-text" href="#education-section">Education</a></li>
+            <li><a class="white-text" href="#skills-section">Skills</a></li>
+            <li><a class="white-text" href="#projects">Projects</a></li>
         </ul>
-
         <!--floating button--> 
         <div class="fixed-action-btn">
             <a class="btn-floating btn-large green">
@@ -47,8 +47,6 @@
                 <li><a class="btn-floating grey darken-3" id="profile-link" href="https://github.com/gughog" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a></li>
             </ul>
         </div>
-
-        
         <!--welcome section-->
         <section id="welcome-section" class="center-align white-text">
             <img id="personal-picture" src="./assets/img/me2.png" alt="My funny face." class="responsive-img circle">
@@ -64,7 +62,7 @@
         </section>
         <!--skills section-->
         <section id="skills-section" class="full-height center-align white-text">
-            <h2>Skills & Tools <i class="far fa-file-code"></i></h2>
+            <h2>Skills and Tools <i class="far fa-file-code"></i></h2>
             <div class="divisor"></div>
             <div id="skills"></div>
         </section>
@@ -94,11 +92,10 @@
             </div>
             <div class="footer-copyright indigo darken-4">
                 <div class="container center-align">
-                © 2019, Made By Gustavo Oliveira
+                © 2019, Made By Gustavo Oliveira with <i class="fas fa-heart"></i> and Materialize.
                 </div>
             </div>
         </footer>
-
         <script src="script.js"></script>
     </body>
 </html>

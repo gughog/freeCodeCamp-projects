@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
     let floating_btn = document.querySelectorAll('.fixed-action-btn')
     let icon_tooltips = document.querySelectorAll('.tooltipped')
     let carousel = document.querySelectorAll('.carousel')
-
+    //instances
     let sidenavi_instances = M.Sidenav.init(sidenavs)
     let floating_btn_instances = M.FloatingActionButton.init(floating_btn);
     let icon_tooltips_instances = M.Tooltip.init(icon_tooltips)
@@ -13,7 +13,6 @@ document.addEventListener('DOMContentLoaded', ()=>{
 })
 
 // Data:
-
 const data = {
     education: [
         {
@@ -98,7 +97,6 @@ const data = {
     ]
 }
 
-
 const education = document.getElementById('education')
 const skills = document.getElementById('skills')
 const cards = document.getElementById('cards')
@@ -115,7 +113,7 @@ education.innerHTML = data.education.map(item =>{
 
 skills.innerHTML = data.skills.map(item =>{
     return `
-        <i class="${item.class} ${item.color} skill-icon tooltipped" data-position="bottom" data-tooltip="${item.id}"></i>
+        <i class="${item.class} ${item.color} skill-icon tooltipped" data-position="top" data-tooltip="${item.id}"></i>
     `
 }).join('')
 

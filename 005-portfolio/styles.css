@@ -1,7 +1,6 @@
 /*Generics*/
-h1, h2{ font-size: 4rem; margin: 0;  }
+h1, h2{ font-size: 4rem; margin: 0.8rem;  }
 #education, #skills h4, h5, p{ margin: 0.2rem; }
-
 .divisor{
     border-top: 2px solid white;
     margin: 2rem auto;
@@ -43,7 +42,6 @@ h1, h2{ font-size: 4rem; margin: 0;  }
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     background: rgb(204,204,204);
     background: -moz-linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
     background: -webkit-linear-gradient(225deg, rgba(204,204,204,1) 0%, rgba(255,255,255,1) 75%);
@@ -59,7 +57,6 @@ h1, h2{ font-size: 4rem; margin: 0;  }
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     background: rgb(66,66,66);
     background: -moz-linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(33,33,33,1) 100%);
     background: -webkit-linear-gradient(45deg, rgba(66,66,66,1) 0%, rgba(33,33,33,1) 100%);
@@ -71,16 +68,20 @@ h1, h2{ font-size: 4rem; margin: 0;  }
     justify-content: center;
     flex-wrap: wrap;
 }
-
 #cards{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 5rem;
 }
-
 #card{
     width: 25rem;
     border: 1px solid #aaa;
     border-radius: 0.6rem;
+}
+@media (max-width: 480px){
+    #welcome-section > h2{ font-size: 3rem; }
+}
+@media (max-width: 380px){
+    #welcome-section > h2{ font-size: 2rem; }
 }

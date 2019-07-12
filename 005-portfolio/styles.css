@@ -1,7 +1,6 @@
 /*Generics*/
 h1, h2{ font-size: 4rem; margin: 0;  }
-h2{ margin-top: 5rem; }
-#education, #skills h4, h5, p{ margin: 0.3rem; }
+#education, #skills h4, h5, p{ margin: 0.2rem; }
 
 .divisor{
     border-top: 2px solid white;
@@ -17,11 +16,11 @@ h2{ margin-top: 5rem; }
 }
 .divisor2-2{
     border-top: 2px solid #1a237e;
-    margin: 2rem auto;
+    margin: 0.5rem auto;
     width: 5vw;
     transition: 0.5s;
 }
-.full-height{ height: 100vh;}
+.full-height{ height: 110vh;}
 .skill-icon{
     font-size: 4rem;
     margin: 1rem;
@@ -40,7 +39,7 @@ h2{ margin-top: 5rem; }
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0f1449",endColorstr="#1a237e",GradientType=1);
 }
 /*-----------------------------------------------------*/
-#education-section{
+#education-section, #projects{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -71,4 +70,17 @@ h2{ margin-top: 5rem; }
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+#cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+
+#card{
+    width: 25rem;
+    border: 1px solid #aaa;
+    border-radius: 0.6rem;
 }

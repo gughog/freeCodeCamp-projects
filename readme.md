@@ -8,3 +8,4 @@ This repository contains all my projects from freeCodeCamp's Web Development cou
 * #02 - [Gaming Survey Form](https://github.com/gughog/freeCodeCamp-projects/tree/master/002-survey-form);
 * #03 - [Technobucket Landing Page](https://github.com/gughog/freeCodeCamp-projects/tree/master/003-product-landing-page);
 * #04 - [Technical Documentation (React.js)](https://github.com/gughog/freeCodeCamp-projects/tree/master/004-technical-docs);
+* #05 - [My Personal Portolio](https://github.com/gughog/freeCodeCamp-projects/tree/master/005-portfolio);
